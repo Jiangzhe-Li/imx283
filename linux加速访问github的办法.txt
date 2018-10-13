@@ -1,0 +1,13 @@
+！！！ 这个办法好像有点卵用。。。
+
+1. Linux的hosts文件路径在：
+
+sudo vim /etc/hosts
+
+2. 在hosts文件末尾添加两行
+
+151.101.72.249 http://global-ssl.fastly.net
+192.30.253.112 http://github.com
+3.重启电脑，让hosts文件生效。
+
+你会发现git clone的速度快很多。

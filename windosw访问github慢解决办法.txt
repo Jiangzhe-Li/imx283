@@ -1,0 +1,20 @@
+！！！好像并没有什么卵用。。。。
+
+
+首先查找ip地址：在站长工具查询github.com，assets-cdn.github.com，github.global.ssl.fastly.net 三个的IP地址；
+
+http://tool.chinaz.com/dns
+
+将IP地址和域名写入HOST文件：文件位置C:\Windows\System32\drivers\etc
+
+例如：
+
+192.30.253.112 github.com
+151.101.0.133 assets-cdn.github.com
+151.101.1.194  github.global.ssl.fastly.net
+
+Windows刷新dns缓存
+
+用“WIN +Ｒ”快捷键打开运行窗口，输入“ｃｍｄ”命令，进行命令行窗口。输入“ipconfig /flushdns”执行，刷新本地的DNS缓存数据。
+
+然后访问和push就可以了。
